@@ -1,4 +1,5 @@
 package com.algoritms;
+//1.7
 
 public class RotateMatrix {
 
@@ -7,8 +8,7 @@ public class RotateMatrix {
             return false;
         }
         int n = matrix.length;
-        for (int layer = 0; layer 
-                < n / 2; layer++) {
+        for (int layer = 0; layer < n / 2; layer++) {
             int first = layer;
             int last = n - 1 - layer;
             for (int i = first; i < last; i++) {
@@ -29,5 +29,29 @@ public class RotateMatrix {
             }
         }
         return true;
+    }
+
+    public static int[][] rotate2(int[][] matrix) {
+        int[][] rotatedMatrix = new int[matrix.length][matrix.length];
+        for (int i = 0; i < matrix[0].length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+
+                rotatedMatrix[j][matrix.length - i - 1] = matrix[i][j];
+            }
+        }
+        return rotatedMatrix;
+    }
+
+    public static void main(String[] args) {
+
+        int[][] matrix = {{2, 3, 4}, {6, 8, 4}, {13, 65, 34}};
+
+        int[][] rotatedMax = rotate2(matrix);
+
+        for (int[] rotatedMax1 : rotatedMax) {
+            for (int j = 0; j < rotatedMax[0].length; j++) {
+                System.out.println(rotatedMax1[j]);
+            }
+        }
     }
 }

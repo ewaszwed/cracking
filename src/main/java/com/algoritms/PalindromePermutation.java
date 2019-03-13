@@ -1,3 +1,6 @@
+//1.4
+
+// We need to check if character appears in pairs, at most 1 character can be without a pair
 package com.algoritms;
 
 public class PalindromePermutation
@@ -13,7 +16,7 @@ public class PalindromePermutation
     {
         char[] textAsArray = getArray(word);
         int[] letters = countNumberOfChars(textAsArray);
-        return checkIfNoMoreThanOneOne(letters);
+        return checkIfNoMoreThanOne(letters);
     }
 
     private static int[] countNumberOfChars(char[] textAsArray)
@@ -31,7 +34,7 @@ public class PalindromePermutation
         return letters;
     }
 
-    private static boolean checkIfNoMoreThanOneOne(int[] letters)
+    private static boolean checkIfNoMoreThanOne(int[] letters)
     {
         int counter = 0;
 

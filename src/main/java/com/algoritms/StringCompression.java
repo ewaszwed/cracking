@@ -1,3 +1,5 @@
+//1.6
+
 package com.algoritms;
 
 public class StringCompression

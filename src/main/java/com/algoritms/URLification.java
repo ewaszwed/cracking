@@ -1,3 +1,5 @@
+//1.3
+
 package com.algoritms;
 
 public class URLification
@@ -22,7 +24,6 @@ public class URLification
 
     public static String urlIfy(String text, int length)
     {
-
         char[] textAsArray = getArray(text);
         int spaceCount = 0;
 
@@ -30,7 +31,6 @@ public class URLification
             if (textAsArray[i] == ' ') {
                 spaceCount++;
             }
-
         }
 
         int index = length + spaceCount * 3;

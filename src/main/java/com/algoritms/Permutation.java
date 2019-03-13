@@ -1,3 +1,5 @@
+//1.2
+
 package com.algoritms;
 
 import java.util.Arrays;
@@ -11,7 +13,7 @@ public class Permutation
         Arrays.sort(content);
         return new String(content);
     }
-
+    // uses sorting, is a clean algorithm
     public static boolean isPermutation(String word1, String word2)
     {
         if (word1.length() != word2.length()) {
