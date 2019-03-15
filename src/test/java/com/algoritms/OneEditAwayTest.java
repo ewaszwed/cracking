@@ -76,5 +76,4 @@ public class OneEditAwayTest
         boolean result = OneEditAway.isOneEditAway(word1, word2);
         assertEquals(false, result);
     }
-
 }

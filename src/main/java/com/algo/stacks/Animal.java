@@ -2,8 +2,8 @@ package com.algo.stacks;
 
 public class Animal {
 
-    private final String name;
-    private int order;   
+    protected final String name;
+    protected int order;   
     static int globalOrder = 0;
     
     public Animal(String name) {
@@ -20,4 +20,11 @@ public class Animal {
     public int getOrder(){
         return order;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" + "name=" + name + '}';
+    }
+    
+   
 }

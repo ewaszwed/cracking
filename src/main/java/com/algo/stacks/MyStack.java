@@ -5,10 +5,10 @@ public class MyStack<T> {
     private MyStackNode<T> top;
 
     public void push(T data) {
-        if (top != null) {
-            top.next = top;
-        }
-        top = new MyStackNode(data);
+
+        MyStackNode<T> t = new MyStackNode<T>(data);
+        t.next = top;
+        top = t;
     }
 
     public T peek() { // returns the node data
