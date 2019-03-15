@@ -46,7 +46,6 @@ public class PrimeNumbers {
 
         }
         return flags;
-
     }
 
     private static void init(boolean[] flags) {

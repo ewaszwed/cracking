@@ -1,3 +1,5 @@
+//5.2
+
 package com.algo.bits;
 
 public class BinaryToString {

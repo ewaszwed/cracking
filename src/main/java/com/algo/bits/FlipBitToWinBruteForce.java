@@ -54,11 +54,8 @@ public class FlipBitToWinBruteForce {
                 thisSeq = Math.max(onesSeqLeft, onesSeqRight);
 
             }
-
             maxSeq = Math.max(thisSeq, maxSeq);
-
         }
         return maxSeq;
     }
-
 }

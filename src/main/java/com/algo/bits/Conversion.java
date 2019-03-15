@@ -8,14 +8,9 @@ public class Conversion {
         // for every bit in bigger number
         //
         int counter = 0;
-
         for (int prod = n ^ m; prod != 0; prod = prod >>> 1) {
-
             counter += prod & 1;
-
         }
         return counter;
-
     }
-
 }

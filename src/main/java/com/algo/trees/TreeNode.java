@@ -20,13 +20,12 @@ public class TreeNode {
             }
         } else {
             if (right == null) {
-                right.setRightChild(new TreeNode(d));
+                setRightChild(new TreeNode(d));
             } else {
                 right.insertInOrder(d);
             }
         }
         size++;
-
     }
 
     public TreeNode find(int d) {
@@ -59,4 +58,10 @@ public class TreeNode {
     public int size() {
         return size;
     }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" + "data=" + data + ", size=" + size + '}';
+    }
+     
 }
